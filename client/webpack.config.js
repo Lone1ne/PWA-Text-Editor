@@ -24,6 +24,8 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "JustAnotherTextEditor",
         short_name: "JATE",
         description: "Edit text on or offline!",
@@ -34,8 +36,8 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
-            sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join("icons"),
+            sizes: [96],
+            destination: path.join("assets", "icons"),
           },
         ],
       }),
