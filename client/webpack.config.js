@@ -29,8 +29,8 @@ module.exports = () => {
         name: "JustAnotherTextEditor",
         short_name: "JATE",
         description: "Edit text on or offline!",
-        background_color: "#ffffff",
-        theme_color: "#ffffff",
+        background_color: "#1B5299",
+        theme_color: "#336699",
         start_url: "./",
         publicPath: "./",
         icons: [
